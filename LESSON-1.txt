@@ -1,0 +1,14 @@
+1)-
+SELECT title FROM movies
+
+2)-
+SELECT title FROM movies
+
+3)-
+SELECT title FROM movies;
+
+4)-
+SELECT title FROM movies;
+
+5)-
+SELECT title FROM movies;
