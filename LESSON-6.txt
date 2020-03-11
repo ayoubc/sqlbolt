@@ -1,0 +1,19 @@
+1)-
+SELECT title, domestic_sales, international_sales 
+FROM movies
+INNER JOIN boxoffice
+ON id = movie_id
+
+2)-
+SELECT title, international_sales,domestic_sales
+FROM movies 
+JOIN boxoffice
+ON id = movie_id
+WHERE international_sales > domestic_sales
+
+3)-
+SELECT title, rating
+FROM movies
+JOIN boxoffice
+ON id = movie_id
+ORDER BY rating DESC
