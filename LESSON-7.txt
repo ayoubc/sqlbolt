@@ -1,0 +1,11 @@
+1)-
+SELECT DISTINCT building FROM employees;
+
+2)-
+SELECT * FROM buildings 
+
+3)-
+SELECT DISTINCT building_name, role 
+FROM buildings 
+  LEFT JOIN employees
+    ON building_name = building;
