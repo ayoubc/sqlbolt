@@ -1,0 +1,16 @@
+1-)
+SELECT name, role 
+FROM employees
+WHERE building IS NULL;
+
+2-)
+SELECT building_name
+FROM buildings
+WHERE building_name 
+NOT IN (SELECT building FROM employees WHERE building NOT NULL)
+===============================================================
+SELECT DISTINCT building_name
+FROM buildings 
+  LEFT JOIN employees
+    ON building_name = building
+WHERE role IS NULL;
