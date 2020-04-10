@@ -1,0 +1,11 @@
+1)-
+SELECT director, count(title)
+FROM movies
+GROUP BY director;
+
+2)-
+SELECT director, SUM(Domestic_sales + International_sales) as total_sales
+FROM movies
+JOIN boxoffice
+    ON id = Movie_id
+GROUP BY director
